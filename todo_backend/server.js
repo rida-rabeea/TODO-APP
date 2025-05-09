@@ -10,7 +10,7 @@ const PORT = 5000
 app.use(express.json())
 
 const corsOptions = {
-  origin: "https://https://taskmaster-y0qs.onrender.com", // Replace with your actual frontend URL
+  origin: "https://taskmaster-y0qs.onrender.com", // Replace with your actual frontend URL
 };
 app.use(cors(corsOptions));
 

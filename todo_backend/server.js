@@ -20,7 +20,7 @@ mongoose.connect("mongodb+srv://rizwanarrf:Rida2017@cluster0.fuvmzpz.mongodb.net
     console.log("Failed to connect to MongoDB.",err)
 })
 
-app.post('https://taskmaster-y0qs.onrender.com/todos',async (req,res)=>{
+app.post('/todos',async (req,res)=>{
 
     const {title, completed} = req.body;
 
@@ -41,7 +41,7 @@ app.post('https://taskmaster-y0qs.onrender.com/todos',async (req,res)=>{
 
 })
 
-app.get('https://taskmaster-y0qs.onrender.com/todos',async (req,res)=>{
+app.get('/todos',async (req,res)=>{
 
     //fetch the todos
     try
@@ -57,7 +57,7 @@ app.get('https://taskmaster-y0qs.onrender.com/todos',async (req,res)=>{
 
 })
 
-app.delete('https://taskmaster-y0qs.onrender.com/todos/:title', async (req,res)=>{
+app.delete('/todos/:title', async (req,res)=>{
 
     const {title} = req.params
     try{
@@ -77,7 +77,7 @@ app.delete('https://taskmaster-y0qs.onrender.com/todos/:title', async (req,res)=
 
 // PUT /todos/title/:title
 // In your Express router file
-app.put('https://taskmaster-y0qs.onrender.com/todos/title/:title', async (req, res) => {
+app.put('/todos/title/:title', async (req, res) => {
     try {
       const updatedTodo = await Todo.findOneAndUpdate(
         { title: req.params.title },

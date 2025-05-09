@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const fetchTodos = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/todos');
+        const response = await axios.get('https://taskmaster-y0qs.onrender.com');
         setTodos(response.data);
       } catch (error) {
         console.error('Error fetching todos:', error);
@@ -30,7 +30,7 @@ function App() {
   // Delete a todo by title
   const handleDelete = async (title) => {
     try {
-      await axios.delete(`http://localhost:5000/todos/${encodeURIComponent(title)}`);
+      await axios.delete(`https://taskmaster-y0qs.onrender.com/${encodeURIComponent(title)}`);
       setTodos((prev) => prev.filter((t) => t.title !== title));
     } catch (error) {
       console.error('Failed to delete todo:', error);
@@ -41,7 +41,7 @@ function App() {
   const handleToggleComplete = async (todo) => {
     try {
       await axios.put(
-        `http://localhost:5000/todos/${encodeURIComponent(todo.title)}`,
+        `https://taskmaster-y0qs.onrender.com/${encodeURIComponent(todo.title)}`,
         { completed: !todo.completed }
       );
 

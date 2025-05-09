@@ -8,7 +8,11 @@ const app = express()
 const PORT = 5000
 
 app.use(express.json())
-app.use(cors())
+
+const corsOptions = {
+  origin: "https://https://taskmaster-y0qs.onrender.com", // Replace with your actual frontend URL
+};
+app.use(cors(corsOptions));
 
 mongoose.connect("mongodb+srv://rizwanarrf:Rida2017@cluster0.fuvmzpz.mongodb.net/todo_list?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
     console.log("Successfully connected to MongoDB.")

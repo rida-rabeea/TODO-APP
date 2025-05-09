@@ -1,0 +1,66 @@
+/* Login Page Styling */
+
+/* Centering the login page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .login-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .login-description {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  
+  .google-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4285f4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .google-btn:hover {
+    background-color: #357ae8;
+  }
+  
+  /* Make the Google icon smaller */
+  .google-btn .google-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px; /* Adjust spacing between icon and text */
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  

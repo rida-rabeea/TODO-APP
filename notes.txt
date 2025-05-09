@@ -1,0 +1,23 @@
+1. npm init -y
+node package manager, used to created a file called package.json which contains 
+dependencies for the project like project name, version, etc.
+
+2. npm install express mongoose cors
+
+3. Create server.js file.
+import express, mongoose and cors using import.
+
+4. Create express app and define port number.
+
+5. mongo db connection string
+mongodb+srv://rizwanarrf:e2VX70Rogouj6FYS@cluster0.xddkuif.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+Use then and catch to handle success or error messages.
+
+6. npm create vite@latest
+framework - react
+variant - javascript
+
+run npm install > npm run dev React + vite page should be visible on  http://localhost:5173/
+vite - development server for apps, for hot reloading.
+

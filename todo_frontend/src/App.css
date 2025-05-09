@@ -1,0 +1,198 @@
+/* App.css */
+
+/* General App Container */
+.app-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f4f7fb;
+}
+
+/* Title Styling */
+.app-title {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Todos Header */
+.todos-header {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #34495e;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+/* Todos List */
+.todos-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual Todo Item */
+.todo-item {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Todo Text */
+.todo-text {
+  font-size: 18px;
+  cursor: pointer;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #7f8c8d;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Input Form and Buttons Styling */
+input[type="text"], button {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"] {
+  width: 70%;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* ======================= */
+/* Login Page Styling */
+/* ======================= */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  padding: 20px;
+}
+
+.login-title {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 25px;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.login-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #2980b9;
+}
+
+.google-button {
+  background-color: #db4437;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.google-button:hover {
+  background-color: #c23321;
+}
+
+.forgot-button {
+  background-color: transparent;
+  color: #555;
+  text-align: center;
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.forgot-button:hover {
+  color: #222;
+}
+
+.logout-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f44336;  /* Red color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;  /* Darker red on hover */
+}
+
